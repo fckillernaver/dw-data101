@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid #ccc;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        padding: 10px 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <caption>
+        table title
+      </caption>
+      <colgroup>
+        <col span="1" style="border: 2px solid red" />
+        <col span="2" style="border: 2px solid blue" />
+        <col style="border: 2px solid magenta" span="3" />
+      </colgroup>
+      <thead>
+        <tr style="background-color: black">
+          <th colspan="2">table head1</th>
+          <th>table head3</th>
+          <th>table head4</th>
+          <th>table head5</th>
+          <th>table head6</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="2">table head1</td>
+          <td colspan="2">table head2</td>
+          <td rowspan="2">table head4</td>
+          <td>table head5</td>
+          <td rowspan="2">table head6</td>
+        </tr>
+        <tr>
+          <td>table head2</td>
+          <td>table head3</td>
+          <td>table head5</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="6">축하합니다.</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
