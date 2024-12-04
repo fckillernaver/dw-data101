@@ -1,0 +1,13 @@
+/* 외부스타일링 */
+
+body {
+  background-color: magenta;
+}
+
+main {
+  border: 10px solid tomato;
+}
+
+main {
+  border-color: blue;
+}
