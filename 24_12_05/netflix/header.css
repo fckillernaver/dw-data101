@@ -1,0 +1,98 @@
+/* 스타일링은 selector 와 "{}" 안의 스타일 룰로 이루어집니다. */
+/* ".", "#" 없이 작성할 때는 태그의 이름을 선택합니다. */
+header {
+  background-color: black;
+  color: whitesmoke;
+}
+
+/* "."이 앞에 붙을 때는 클래스 이름을 선택, "#"은 아이디를 선택합니다. */
+/* header 안에 있는 모든 태그들 중 클래스 값으로 wrap이 들어가있는 모든 태그들과, button태그중 클래스 값이 globe 인것을 선택합니다. */
+header .wrap,
+button.globe {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+/* header 태그와 ul 태그를 띄워주면서 header 태그 안의 모든 ul 을 선택한다는 뜻입니다. */
+header ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* "," 는 그리고 라는 뜻으로 조건부로 2가지 이상을 선택하고플 때 사용합니다. header 태그 안의 모든 button 태그와 header 안의 모든 a 태그를 선택합니다.*/
+
+/* 만약 header button, a {} 이렇게 선택하시면 header 태그 안의 모든 button태그와 html 상의 모든 a 태그를 선택합니다. 꼭 위 또는 아래처럼 header 를 앞에 붙여 선택의 범위를 좁혀주시는 것이 필요합니다. */
+header button,
+header a {
+  background-color: transparent;
+  border: none;
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+/* 클래스명이 title 인 button 태그 바로 아래의 img 태그만 선택합니다. */
+button.title > img {
+  width: 60px;
+  height: 60px;
+}
+
+/* 클래스명이 globe 인 버튼과 클래스명이 login 인 버튼을 선택합니다. */
+button.globe,
+button.login {
+  border: 1px solid whitesmoke;
+
+  /* height 값의 반을 border-radius 로 주시면 가능한 최대한 동그랗게 모서리를 구부려줍니다. */
+  height: 40px;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+/* 클래스명이 login 인 버튼을 선택합니다. */
+button.login {
+  background-color: whitesmoke;
+  color: black;
+}
+
+/* 클래스명이 globe 인 버튼 바로 아래의 img 태그를 선택합니다. */
+button.globe > img {
+  width: 16px;
+  height: 16px;
+}
+
+/* header 태그 안의 클래스명이 wrap 인 div만 선택합니다. */
+header > div.wrap {
+  /* display의 값이 flex일때 justify-conent에 space-between 을 주면 양 옆으로 밀어줍니다. */
+  justify-content: space-between;
+}
+
+/* 헤더 태그 바로 아래에 많은 div들 중 2번째를 선택합니다. */
+header > div:nth-child(2) {
+  /* justify-conent에 center로 가운데 정렬해줍니다 */
+  justify-content: center;
+  display: flex;
+}
+
+/* 헤더 태그 바로 아래에 많은 div들 중 2번째에 있는 클래스명 wrap의 ul태그들을 선택합니다. */
+header > div:nth-child(2) ul.wrap {
+  border-radius: 200px;
+  background-color: rgb(54, 54, 54);
+  /* 패딩을 2가지 영역으로 쪼개서 값을 주면 첫부분은 위아래, 두번째 부분은 좌우에 값을 줍니다. */
+  padding: 10px 30px;
+  /* 4개의 li 사이의 공간 3군데에 틈을 만들어줍니다. */
+  column-gap: 30px;
+}
+
+/* header 태그 안의 모든 a 태그들의 밑줄을 없애줍니다. 시간 내셔서 ctrl space 로 어떤 값들이 있는지 확인하여 개발역량++++ */
+header a {
+  text-decoration: none;
+
+  /* 깨알팁입니다. header 안의 a태그를 마우스를 올렸을 때 글자색이 밝아집니다. */
+  color: rgb(197, 197, 197);
+}
+
+/* header 태그 안의 모든 a 태그 위로 올렸을 때를 선택합니다. */
+header a:hover {
+  color: white;
+}

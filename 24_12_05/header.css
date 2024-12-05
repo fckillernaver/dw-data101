@@ -1,0 +1,58 @@
+body {
+  background-color: rgb(41, 41, 41);
+  color: whitesmoke;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+ul {
+  list-style-type: none;
+}
+
+button.globe {
+  height: 36px;
+  border-radius: 18px;
+  cursor: pointer;
+
+  background-color: transparent;
+  border: 1px solid;
+  color: whitesmoke;
+}
+
+button.globe img {
+  width: 16px;
+}
+
+button.login {
+  height: 36px;
+  border-radius: 18px;
+  cursor: pointer;
+  border: none;
+  transition: all 0.5s;
+}
+
+button.login:hover {
+  background-color: rgb(180, 180, 180);
+}
+
+button.title {
+  font-size: 30px;
+  font-weight: 900;
+  color: rgb(255, 59, 25);
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s;
+}
+
+button.title:hover {
+  transform: scale(1.5);
+}
+
+header ul {
+  display: flex;
+  column-gap: 10px;
+}

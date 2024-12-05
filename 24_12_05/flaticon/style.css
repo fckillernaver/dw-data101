@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* reset.css 검색 후 복붙 */
+
+header,
+ul,
+.wrap {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+header {
+  background-color: rgb(6, 26, 82);
+  height: 60px;
+}
+
+header button {
+  color: whitesmoke;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+}
+
+header > .wrap {
+  justify-content: space-between;
+  width: 100%;
+}
+
+header img {
+  width: 20px;
+  height: 20px;
+}
