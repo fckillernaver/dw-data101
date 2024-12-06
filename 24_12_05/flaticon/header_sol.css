@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+button.icon img {
+  width: 20px;
+  height: 20px;
+}
+
+header button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: whitesmoke;
+  height: 60px;
+  padding: 0 10px;
+}
+
+header {
+  background-color: rgb(13, 1, 49);
+}
+
+.flex {
+  display: flex;
+}
+
+header > .flex {
+  flex: 1;
+}
+
+button.title {
+  font-size: 20px;
+  font-weight: 900;
+}
+
+header > .flex {
+  justify-content: space-between;
+}

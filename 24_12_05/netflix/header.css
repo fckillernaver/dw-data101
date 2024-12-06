@@ -33,7 +33,7 @@ header a {
 }
 
 /* 클래스명이 title 인 button 태그 바로 아래의 img 태그만 선택합니다. */
-button.title > img {
+button.title > img.s {
   width: 60px;
   height: 60px;
 }
